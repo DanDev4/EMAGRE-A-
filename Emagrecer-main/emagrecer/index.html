@@ -3,6 +3,8 @@
 
 <head>
   <meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Emagrecer - IMC</title>
   <link rel="stylesheet" href="css/style.css" />
@@ -10,19 +12,89 @@
 
 <body>
   <header>
-    <img src="img/obesidade.png" alt="Logo da empresa" id="logo">
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-    <nav class="centro" id="navbar">
-      <a href="#home">Início</a>
-      <a href="#sobre">Calculadora</a>
-      <a href="#Sobre nós">Sobre nós</a>
-    </nav>
+    <div class="container">
+      <img src="img/obesidade.png" alt="Logo da empresa" id="logo">
+      <nav class="centro" id="navbar">
+        <a href="#home">Início</a>
+        <a href="#sobre">Calculadora</a>
+        <a href="#Sobre nós">Sobre nós</a>
+      </nav>
+    </div>
   </header>
-  <img src="img/gordoscorrendo.png" alt="Logo da empresa" id="banner">
+  <section class="banner">
+    <div class="banner-overlay">
+      <h1>Saúde é liberdade.</h1>
+      <p>Descubra o seu equilíbrio e transforme sua vida.</p>
+    </div>
+  </section>
+  <section id="sobre-obesidade" class="texto-obesidade">
+    <h2>Entenda a Obesidade</h2>
+    <img class="icon" src="img/saude.png" alt="Saúde e bem-estar">
 
-  <h1>Entenda a Obesidade</h1>
-  <p>A obesidade é um problema de saúde pública...</p>
 
+    <p>
+      A obesidade vai muito além dos números na balança — ela afeta diretamente sua saúde, disposição e bem-estar. Essa condição pode aumentar o risco de doenças como diabetes, hipertensão, problemas cardiovasculares e até depressão.
+    </p>
+    <p>
+      Mas a boa notícia é que você não está sozinho nessa jornada. Com pequenas mudanças no dia a dia, é possível transformar sua vida.
+    </p>
+    <p>
+      Pensando nisso, criamos a <strong>Emagreça</strong>: uma calculadora de IMC inteligente que analisa seus dados e oferece uma <strong>dieta personalizada</strong> para o seu objetivo. Assim, você dá o primeiro passo com segurança, motivação e apoio real.
+    </p>
+  </section>
+
+  <section class="maleficios">
+    <h2>Malefícios da Obesidade</h2>
+
+    <div class="grid-maleficios">
+      <div class="maleficio-card">
+        <i class="fas fa-heartbeat"></i>
+        <div>
+          <h3>Doenças Cardíacas</h3>
+          <p>O risco de infarto e problemas no coração aumenta com o excesso de peso.</p>
+        </div>
+      </div>
+      <div class="maleficio-card">
+        <i class="fas fa-joint"></i>
+        <div>
+          <h3>Dor nas Articulações</h3>
+          <p>O excesso de peso sobrecarrega joelhos e coluna, causando dores e lesões.</p>
+        </div>
+      </div>
+      <div class="maleficio-card">
+        <i class="fas fa-mars"></i> <!-- Ou fas fa-venus-mars -->
+        <div>
+          <h3>Problemas Hormonais</h3>
+          <p>Desequilíbrios hormonais podem afetar o metabolismo e a fertilidade.</p>
+        </div>
+      </div>
+
+      <div class="maleficio-card">
+        <i class="fas fa-syringe"></i>
+        <div>
+          <h3>Diabetes Tipo 2</h3>
+          <p>O acúmulo de gordura interfere na regulação da glicose no sangue.</p>
+        </div>
+      </div>
+
+      <div class="maleficio-card">
+        <i class="fas fa-lungs"></i>
+        <div>
+          <h3>Dificuldade para Respirar</h3>
+          <p>A obesidade compromete a respiração, especialmente durante o sono.</p>
+        </div>
+      </div>
+
+      <div class="maleficio-card">
+        <i class="fas fa-brain"></i>
+        <div>
+          <h3>Saúde Mental</h3>
+          <p>A autoestima pode ser abalada, contribuindo para ansiedade e depressão.</p>
+
+        </div>
+      </div>
+    </div>
+  </section>
 
   <h2>Calcule seu IMC</h2>
   <form id="imc-form">
