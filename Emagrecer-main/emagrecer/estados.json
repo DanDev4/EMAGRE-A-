@@ -1,0 +1,191 @@
+[
+  {
+    "code": "AC",
+    "sigla": "AC",
+    "nome": "Acre",
+    "populacao": "830.018",
+    "descricao": "Cerca de 23,5% da população do Acre apresenta obesidade, segundo dados recentes do Ministério da Saúde."
+  },
+  {
+    "code": "AL",
+    "sigla": "AL",
+    "nome": "Alagoas",
+    "populacao": "3.127.511",
+    "descricao": "Alagoas tem um dos maiores índices de obesidade do Nordeste, com 27,1% da população afetada."
+  },
+  {
+    "code": "AM",
+    "sigla": "AM",
+    "nome": "Amazonas",
+    "populacao": "4.207.714",
+    "descricao": "No Amazonas, 25,6% da população apresenta quadro de obesidade, um reflexo da transição alimentar nas cidades."
+  },
+  {
+    "code": "AP",
+    "sigla": "AP",
+    "nome": "Amapá",
+    "populacao": "877.613",
+    "descricao": "O Amapá tem uma taxa de obesidade de 24,9%, afetando principalmente adultos entre 30 e 49 anos."
+  },
+  {
+    "code": "BA",
+    "sigla": "BA",
+    "nome": "Bahia",
+    "populacao": "14.141.626",
+    "descricao": "Na Bahia, 26,8% da população sofre com obesidade, sendo mais comum em áreas urbanas."
+  },
+  {
+    "code": "CE",
+    "sigla": "CE",
+    "nome": "Ceará",
+    "populacao": "9.240.580",
+    "descricao": "Ceará tem 25,4% da sua população com obesidade, em grande parte associada ao sedentarismo."
+  },
+  {
+    "code": "DF",
+    "sigla": "DF",
+    "nome": "Distrito Federal",
+    "populacao": "3.094.325",
+    "descricao": "No Distrito Federal, 29,2% da população adulta apresenta obesidade, acima da média nacional."
+  },
+  {
+    "code": "ES",
+    "sigla": "ES",
+    "nome": "Espírito Santo",
+    "populacao": "4.108.508",
+    "descricao": "O Espírito Santo tem uma taxa de obesidade de 27,3%, com crescimento entre jovens adultos."
+  },
+  {
+    "code": "GO",
+    "sigla": "GO",
+    "nome": "Goiás",
+    "populacao": "7.055.228",
+    "descricao": "Goiás apresenta 27,8% de sua população em situação de obesidade, segundo dados de 2023."
+  },
+  {
+    "code": "MA",
+    "sigla": "MA",
+    "nome": "Maranhão",
+    "populacao": "7.153.262",
+    "descricao": "O Maranhão tem uma das menores taxas de obesidade do Brasil, com 22,3% da população afetada."
+  },
+  {
+    "code": "MT",
+    "sigla": "MT",
+    "nome": "Mato Grosso",
+    "populacao": "3.784.239",
+    "descricao": "No Mato Grosso, 28,6% da população está obesa, um número crescente nos últimos anos."
+  },
+  {
+    "code": "MS",
+    "sigla": "MS",
+    "nome": "Mato Grosso do Sul",
+    "populacao": "2.839.188",
+    "descricao": "O estado de Mato Grosso do Sul apresenta uma taxa de obesidade de 28,2%."
+  },
+  {
+    "code": "MG",
+    "sigla": "MG",
+    "nome": "Minas Gerais",
+    "populacao": "21.411.923",
+    "descricao": "Minas Gerais tem 27,9% da população com obesidade, com alta incidência em regiões metropolitanas."
+  },
+  {
+    "code": "PA",
+    "sigla": "PA",
+    "nome": "Pará",
+    "populacao": "8.690.745",
+    "descricao": "A taxa de obesidade no Pará é de 24,6%, impactando principalmente adultos jovens."
+  },
+  {
+    "code": "PB",
+    "sigla": "PB",
+    "nome": "Paraíba",
+    "populacao": "4.059.905",
+    "descricao": "Na Paraíba, 26,4% da população sofre com obesidade, segundo o último levantamento da saúde."
+  },
+  {
+    "code": "PR",
+    "sigla": "PR",
+    "nome": "Paraná",
+    "populacao": "11.597.484",
+    "descricao": "Paraná apresenta uma taxa de obesidade de 29,1%, entre as mais altas da região Sul."
+  },
+  {
+    "code": "PE",
+    "sigla": "PE",
+    "nome": "Pernambuco",
+    "populacao": "9.616.621",
+    "descricao": "Em Pernambuco, 26,1% da população é obesa, com destaque para áreas urbanas."
+  },
+  {
+    "code": "PI",
+    "sigla": "PI",
+    "nome": "Piauí",
+    "populacao": "3.281.480",
+    "descricao": "O Piauí tem cerca de 23,8% da sua população adulta com obesidade."
+  },
+  {
+    "code": "RJ",
+    "sigla": "RJ",
+    "nome": "Rio de Janeiro",
+    "populacao": "17.463.349",
+    "descricao": "O Rio de Janeiro registra uma taxa de obesidade de 28,7%, reflexo de hábitos alimentares urbanos."
+  },
+  {
+    "code": "RN",
+    "sigla": "RN",
+    "nome": "Rio Grande do Norte",
+    "populacao": "3.560.903",
+    "descricao": "Rio Grande do Norte tem 25,2% da população com obesidade, com crescimento entre adolescentes."
+  },
+  {
+    "code": "RS",
+    "sigla": "RS",
+    "nome": "Rio Grande do Sul",
+    "populacao": "11.466.630",
+    "descricao": "Com 30,1%, o Rio Grande do Sul tem uma das maiores taxas de obesidade do país."
+  },
+  {
+    "code": "RO",
+    "sigla": "RO",
+    "nome": "Rondônia",
+    "populacao": "1.796.460",
+    "descricao": "Rondônia apresenta 26,5% de obesidade entre sua população adulta."
+  },
+  {
+    "code": "RR",
+    "sigla": "RR",
+    "nome": "Roraima",
+    "populacao": "652.713",
+    "descricao": "Roraima tem uma taxa de obesidade de 24,1%, ainda considerada moderada."
+  },
+  {
+    "code": "SC",
+    "sigla": "SC",
+    "nome": "Santa Catarina",
+    "populacao": "7.610.361",
+    "descricao": "Santa Catarina possui 29,8% da população obesa, com forte impacto nas faixas urbanas."
+  },
+  {
+    "code": "SP",
+    "sigla": "SP",
+    "nome": "São Paulo",
+    "populacao": "46.024.937",
+    "descricao": "São Paulo apresenta uma taxa de obesidade de 28,9%, com preocupação entre crianças e adolescentes."
+  },
+  {
+    "code": "SE",
+    "sigla": "SE",
+    "nome": "Sergipe",
+    "populacao": "2.338.474",
+    "descricao": "Sergipe possui 26,9% da população com obesidade, com tendência de alta."
+  },
+  {
+    "code": "TO",
+    "sigla": "TO",
+    "nome": "Tocantins",
+    "populacao": "1.607.363",
+    "descricao": "Tocantins tem 25,7% da população com obesidade, afetando principalmente mulheres entre 30 e 59 anos."
+  }
+]

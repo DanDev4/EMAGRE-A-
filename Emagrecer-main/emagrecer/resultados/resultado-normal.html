@@ -1,18 +1,151 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
-  <title>Resultado - Peso Normal</title>
-  <link rel="stylesheet" href="../css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resultado: Normal</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: #2e7d32;
+      color: #fff;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .descricao {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+
+    .causas-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .caixa-causa {
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: 0.3s;
+    }
+
+    .caixa-causa:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .caixa-causa i {
+      font-size: 2.2rem;
+      color: #2e7d32;
+      margin-bottom: 1rem;
+    }
+
+    .caixa-causa h4 {
+      margin: 0.5rem 0;
+    }
+
+    .botao-download {
+      display: inline-block;
+      background-color: #2e7d32;
+      color: white;
+      text-decoration: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .botao-download:hover {
+      background-color: #1b5e20;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #888;
+      margin-top: 4rem;
+      padding-bottom: 2rem;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Parabéns! Seu peso está normal</h1>
-  <p>Seu IMC está dentro da faixa ideal.</p>
-  <h2>Dicas para manter o peso:</h2>
-  <ul>
-    <li>Mantenha uma alimentação equilibrada.</li>
-    <li>Pratique exercícios físicos regularmente.</li>
-    <li>Evite o consumo excessivo de alimentos ultraprocessados.</li>
-  </ul>
+
+  <header>
+    <h1>Resultado: Peso Normal</h1>
+  </header>
+
+  <main>
+    <p class="descricao">
+      Seu IMC indica que você está com o peso ideal. Isso é ótimo! Manter-se dentro dessa faixa ajuda a reduzir riscos de doenças e melhora sua qualidade de vida. Continue com hábitos saudáveis e faça acompanhamento regular com profissionais da saúde.
+    </p>
+
+    <section class="causas-grid">
+      <div class="caixa-causa">
+        <i class="fas fa-utensils"></i>
+        <h4>Alimentação equilibrada</h4>
+        <p>Uma dieta rica em nutrientes ajuda a manter o corpo saudável e em equilíbrio.</p>
+      </div>
+      <div class="caixa-causa">
+        <i class="fas fa-running"></i>
+        <h4>Exercícios físicos</h4>
+        <p>Atividades físicas regulares contribuem para o controle de peso e bem-estar geral.</p>
+      </div>
+      <div class="caixa-causa">
+        <i class="fas fa-head-side-virus"></i>
+        <h4>Saúde mental estável</h4>
+        <p>Manter o equilíbrio emocional ajuda a evitar distúrbios alimentares e compulsões.</p>
+      </div>
+      <div class="caixa-causa">
+        <i class="fas fa-moon"></i>
+        <h4>Boa qualidade do sono</h4>
+        <p>Dormir bem regula hormônios importantes para o controle do apetite e peso.</p>
+      </div>
+      <div class="caixa-causa">
+        <i class="fas fa-seedling"></i>
+        <h4>Hábitos saudáveis</h4>
+        <p>Evitar vícios e manter uma rotina saudável é essencial para manter o peso ideal.</p>
+      </div>
+      <div class="caixa-causa">
+        <i class="fas fa-briefcase-medical"></i>
+        <h4>Acompanhamento médico</h4>
+        <p>Consultar profissionais periodicamente garante o monitoramento da sua saúde.</p>
+      </div>
+    </section>
+
+    <div style="text-align: center;">
+      <a href="dieta-normal.pdf" download class="botao-download">
+        <i class="fas fa-file-download"></i> Baixar PDF com dicas de dieta
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Seu Projeto de Saúde. Todos os direitos reservados.
+  </footer>
+
 </body>
+
 </html>

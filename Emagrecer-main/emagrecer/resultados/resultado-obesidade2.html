@@ -1,18 +1,151 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
-  <title>Resultado - Obesidade Grau 2</title>
-  <link rel="stylesheet" href="../css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resultado: Magreza</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: #1d3557;
+      color: #fff;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .descricao {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+
+    .causas-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .caixa-causa {
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: 0.3s;
+    }
+
+    .caixa-causa:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .caixa-causa i {
+      font-size: 2.2rem;
+      color: #1d3557;
+      margin-bottom: 1rem;
+    }
+
+    .caixa-causa h4 {
+      margin: 0.5rem 0;
+    }
+
+    .botao-download {
+      display: inline-block;
+      background-color: #1d3557;
+      color: white;
+      text-decoration: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .botao-download:hover {
+      background-color: #1d3557;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #888;
+      margin-top: 4rem;
+      padding-bottom: 2rem;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Obesidade Grau 2</h1>
-  <p>Seu IMC indica obesidade moderada. É importante agir!</p>
-  <h2>Cuidados e orientações:</h2>
-  <ul>
-    <li>Busque apoio médico e psicológico.</li>
-    <li>Evite dietas radicais. Prefira mudanças sustentáveis.</li>
-    <li>Exercícios e reeducação alimentar são fundamentais.</li>
-  </ul>
+
+  <header>
+    <h1>Resultado: Magreza</h1>
+  </header>
+
+  <main>
+    <p class="descricao">
+      Seu IMC indica que você está abaixo do peso ideal (magreza). A magreza pode ser resultado de diversos fatores, desde condições de saúde até alimentação insuficiente. É importante buscar acompanhamento médico ou nutricional para garantir uma saúde equilibrada.
+    </p>
+
+    <section class="causas-grid">
+      <div class="caixa-causa">
+        <i class="fas fa-utensils"></i>
+        <h4>Alimentação inadequada</h4>
+        <p>Baixa ingestão de calorias ou falta de nutrientes essenciais pode causar perda de peso excessiva.</p>
+      </div>
+      <div class="caixa-causa">
+        <i class="fas fa-brain"></i>
+        <h4>Distúrbios alimentares</h4>
+        <p>Condições como anorexia nervosa ou bulimia afetam o peso e a saúde geral.</p>
+      </div>
+      <div class="caixa-causa">
+        <i class="fas fa-dna"></i>
+        <h4>Fatores genéticos</h4>
+        <p>Algumas pessoas têm metabolismo acelerado ou tendência genética à magreza.</p>
+      </div>
+      <div class="caixa-causa">
+        <i class="fas fa-heartbeat"></i>
+        <h4>Doenças crônicas</h4>
+        <p>Problemas como hipertireoidismo ou câncer podem levar à perda de peso.</p>
+      </div>
+      <div class="caixa-causa">
+        <i class="fas fa-head-side-virus"></i>
+        <h4>Estresse e ansiedade</h4>
+        <p>Fatores emocionais podem afetar o apetite e contribuir para a magreza.</p>
+      </div>
+      <div class="caixa-causa">
+        <i class="fas fa-burn"></i>
+        <h4>Excesso de atividade física</h4>
+        <p>Queima calórica muito alta sem reposição adequada pode resultar em magreza.</p>
+      </div>
+    </section>
+
+    <div style="text-align: center;">
+      <a href="dieta-magreza.pdf" download class="botao-download">
+        <i class="fas fa-file-download"></i> Baixar PDF com dicas de dieta
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Seu Projeto de Saúde. Todos os direitos reservados.
+  </footer>
+
 </body>
+
 </html>

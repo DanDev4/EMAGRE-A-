@@ -23,11 +23,11 @@
   </header>
   <section class="banner">
     <div class="banner-overlay">
-      <h1>Saúde é liberdade.</h1>
+      <h3>Saúde é liberdade.</h3>
       <p>Descubra o seu equilíbrio e transforme sua vida.</p>
     </div>
   </section>
-  <section id="sobre-obesidade" class="texto-obesidade">
+  <section id="sobre-obesidade" class="texto-obesidade2">
     <h2>Entenda a Obesidade</h2>
     <img class="icon" src="img/saude.png" alt="Saúde e bem-estar">
 
@@ -42,7 +42,82 @@
       Pensando nisso, criamos a <strong>Emagreça</strong>: uma calculadora de IMC inteligente que analisa seus dados e oferece uma <strong>dieta personalizada</strong> para o seu objetivo. Assim, você dá o primeiro passo com segurança, motivação e apoio real.
     </p>
   </section>
+  <!-- INICIO SVG MAP -->
+  <section class="maleficios">
+    <h2>Obesidade no Brasil</h2>
 
+    <div class="mapa-grid">
+      <!-- COLUNA 1 - TEXTO FIXO -->
+      <div class="texto-obesidade">
+        <h3>Dados de casos de obesidade no Brasil</h3>
+        <p>
+          A obesidade infantil é um problema crescente em diversas regiões do Brasil. Conhecer a realidade do seu estado é essencial para promover hábitos mais saudáveis e prevenir doenças desde a infância. Clique no mapa e veja os dados por estado!
+        </p>
+      </div>
+
+      <!-- COLUNA 2 - MAPA E TEXTO DINÂMICO -->
+      <div id="container2">
+        <img src="img/brasil.svg" onload="fetchSvg(this)" />
+        <div id="text">
+          <h1 id="stateName"></h1>
+          <h3 id="statePop"></h3>
+          <p id="stateDesc"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    const estados = [];
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const mapaImg = document.querySelector('img[src$="brasil.svg"]');
+      if (mapaImg) fetchAndInlineSVG(mapaImg);
+      carregarDadosEstados();
+    });
+
+    function fetchAndInlineSVG(image) {
+      fetch(image.src)
+        .then(res => res.text())
+        .then(svgText => {
+          const temp = document.createElement("div");
+          temp.innerHTML = svgText;
+          const svg = temp.querySelector("svg");
+          image.replaceWith(svg);
+
+          ativarInteracaoComEstados(svg);
+        });
+    }
+
+    function carregarDadosEstados() {
+      fetch("estados.json")
+        .then(res => res.json())
+        .then(data => estados.push(...data))
+        .catch(err => console.error("Erro ao carregar dados dos estados:", err));
+    }
+
+    function ativarInteracaoComEstados(svg) {
+      const paths = svg.querySelectorAll(".estado"); // só .estado mesmo, já está padronizado
+      paths.forEach(path => {
+        path.style.cursor = "pointer";
+        path.addEventListener("click", () => {
+          const sigla = path.getAttribute("data-sigla");
+          const estado = estados.find(uf => uf.sigla === sigla);
+          if (estado) atualizarConteudo(estado);
+          else console.warn(`Estado com sigla '${sigla}' não encontrado.`);
+        });
+      });
+    }
+
+    function atualizarConteudo({ nome, sigla, populacao, descricao }) {
+      document.getElementById("stateName").textContent = `${nome} (${sigla})`;
+      document.getElementById("statePop").textContent = `População: ${populacao}`;
+      document.getElementById("stateDesc").textContent = descricao;
+    }
+  </script>
+
+
+
+  <!-- FINAL SVG MAP -->
   <section class="maleficios">
     <h2>Malefícios da Obesidade</h2>
 
@@ -117,6 +192,52 @@
 
   </form>
 
+  <section id="sobre-nos">
+    <div class="sobre-container">
+      <h2 class="sobre-titulo">Sobre Nós</h2>
+      <p class="sobre-texto">
+        <strong>Somos o EMAGREÇA!, um projeto criado por estudantes da Universidade São Judas, apaixonados por tecnologia, design e, acima de tudo, cuidado com o próximo.</strong><br><br>
+
+        Como parte da disciplina de Usabilidade, Desenvolvimento Web, Mobile e Jogos, unimos nossas habilidades para construir uma plataforma digital que promova a saúde e o bem-estar de pessoas com obesidade — sempre com empatia, respeito e acessibilidade.
+      </p>
+      <p class="sobre-texto">
+        Nosso objetivo é simples, mas poderoso: inspirar mudanças reais por meio da informação, do suporte e da usabilidade.
+        Acreditamos que o caminho para uma vida mais saudável deve ser leve, motivador e, acima de tudo, possível para todos.
+
+        No EMAGREÇA!, você encontra um espaço acolhedor, repleto de dicas, orientações, ferramentas e motivação para transformar sua jornada em direção a uma saúde melhor.
+      </p>
+      <p class="sobre-frase">
+        <em>Tecnologia a favor do cuidado. Conhecimento a serviço da vida. Esse é o EMAGREÇA!💙</em>
+      </p>
+    </div>
+  </section>
+  <footer id="siteFooter">
+    <div class="footer-content">
+      <div class="footer-col">
+        <h4>EMAGREÇA!</h4>
+        <img src="img/obesidade.png" alt="Logo da empresa" id="logo">
+
+        <p>O peso de uma pessoa jamais deve ser maior que o valor que ela carrega dentro de si.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <p>Email: contato@emagreca.com</p>
+        <p>WhatsApp: (11) 91234-5678</p>
+        <p>Endereço: Rua Exemplo, 123 - São Paulo</p>
+      </div>
+      <div class="footer-col">
+        <h4>Redes Sociais</h4>
+        <ul class="social-links">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">TikTok</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 7 Looks. Todos os direitos reservados.</p>
+    </div>
+  </footer>
   <script type="module" src="js/controller/imcController.js"></script>
 </body>
 
