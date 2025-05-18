@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Resultado: Magreza</title>
+  <title>Resultado: Obesidade Grau 1</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     body {
@@ -16,7 +16,7 @@
     }
 
     header {
-      background-color: #1d3557;
+      background-color: #e65100;
       color: #fff;
       padding: 1.5rem;
       text-align: center;
@@ -58,7 +58,7 @@
 
     .caixa-causa i {
       font-size: 2.2rem;
-      color: #1d3557;
+      color: #e65100;
       margin-bottom: 1rem;
     }
 
@@ -68,17 +68,18 @@
 
     .botao-download {
       display: inline-block;
-      background-color: #1d3557;
+      background-color: #e65100;
       color: white;
       text-decoration: none;
       padding: 0.8rem 1.5rem;
       border-radius: 8px;
       font-weight: bold;
+      margin-left: 350px;
       transition: background 0.3s;
     }
 
     .botao-download:hover {
-      background-color: #1d3557;
+      background-color: #bf360c;
     }
 
     footer {
@@ -88,62 +89,78 @@
       margin-top: 4rem;
       padding-bottom: 2rem;
     }
+
+    .botao-voltar {
+      background-color: #1d3557;
+      color: #ffffff;
+      border: none;
+      padding: 10px 10px;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .botao-voltar:hover {
+      background-color: #333333;
+    }
   </style>
 </head>
 
 <body>
 
   <header>
-    <h1>Resultado: Magreza</h1>
+    <h1>Resultado: Obesidade Grau 1</h1>
   </header>
 
   <main>
     <p class="descricao">
-      Seu IMC indica que você está abaixo do peso ideal (magreza). A magreza pode ser resultado de diversos fatores, desde condições de saúde até alimentação insuficiente. É importante buscar acompanhamento médico ou nutricional para garantir uma saúde equilibrada.
+      Seu IMC indica obesidade grau 1. Este estágio representa um risco moderado à saúde, podendo desencadear complicações como hipertensão, diabetes tipo 2 e problemas articulares. É essencial adotar hábitos saudáveis e buscar orientação profissional para um plano de emagrecimento sustentável.
     </p>
 
     <section class="causas-grid">
       <div class="caixa-causa">
-        <i class="fas fa-utensils"></i>
-        <h4>Alimentação inadequada</h4>
-        <p>Baixa ingestão de calorias ou falta de nutrientes essenciais pode causar perda de peso excessiva.</p>
+        <i class="fas fa-hamburger"></i>
+        <h4>Excesso de calorias</h4>
+        <p>Alimentação com alto teor de gordura e açúcar é um fator central na obesidade.</p>
       </div>
       <div class="caixa-causa">
-        <i class="fas fa-brain"></i>
-        <h4>Distúrbios alimentares</h4>
-        <p>Condições como anorexia nervosa ou bulimia afetam o peso e a saúde geral.</p>
+        <i class="fas fa-running"></i>
+        <h4>Falta de atividade física</h4>
+        <p>O sedentarismo reduz o gasto energético e facilita o acúmulo de gordura.</p>
+      </div>
+      <div class="caixa-causa">
+        <i class="fas fa-user-clock"></i>
+        <h4>Rotina desregulada</h4>
+        <p>Maus hábitos de sono e alimentação podem afetar o metabolismo.</p>
       </div>
       <div class="caixa-causa">
         <i class="fas fa-dna"></i>
         <h4>Fatores genéticos</h4>
-        <p>Algumas pessoas têm metabolismo acelerado ou tendência genética à magreza.</p>
+        <p>Algumas pessoas possuem predisposição biológica ao ganho de peso.</p>
       </div>
       <div class="caixa-causa">
-        <i class="fas fa-heartbeat"></i>
-        <h4>Doenças crônicas</h4>
-        <p>Problemas como hipertireoidismo ou câncer podem levar à perda de peso.</p>
+        <i class="fas fa-briefcase-medical"></i>
+        <h4>Problemas hormonais</h4>
+        <p>Condições como hipotireoidismo influenciam no controle do peso.</p>
       </div>
       <div class="caixa-causa">
-        <i class="fas fa-head-side-virus"></i>
-        <h4>Estresse e ansiedade</h4>
-        <p>Fatores emocionais podem afetar o apetite e contribuir para a magreza.</p>
-      </div>
-      <div class="caixa-causa">
-        <i class="fas fa-burn"></i>
-        <h4>Excesso de atividade física</h4>
-        <p>Queima calórica muito alta sem reposição adequada pode resultar em magreza.</p>
+        <i class="fas fa-brain"></i>
+        <h4>Questões emocionais</h4>
+        <p>Ansiedade e depressão podem levar à alimentação compulsiva.</p>
       </div>
     </section>
 
-    <div style="text-align: center;">
-      <a href="dieta-magreza.pdf" download class="botao-download">
-        <i class="fas fa-file-download"></i> Baixar PDF com dicas de dieta
-      </a>
-    </div>
+    <a href="/emagrecer/img/GRAU_1.pdf" download class="botao-download">
+      <i class="fas fa-file-download"></i> Baixar PDF com dicas de dieta
+    </a>
   </main>
 
   <footer>
-    &copy; 2025 Seu Projeto de Saúde. Todos os direitos reservados.
+    <a href="/emagrecer/index.html" style="text-decoration: none; display: inline-flex; align-items: center; gap: 10px;">
+      <img src="/emagrecer/img/obesidade.png" alt="Logo" style="height: 40px; cursor: pointer;" />
+      <button class="botao-voltar">Início</button>
   </footer>
 
 </body>
